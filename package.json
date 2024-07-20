@@ -1,9 +1,9 @@
 {
   "private": true,
   "scripts": {
-    "build": "next parcel pages/index.html",
+    "build": "next build",
     "dev": "next dev",
-    "start": "next parcel pages/index.html"
+    "start": "next start"
   },
 "dependencies": {
 				"@carbon/colors": "^10.21.0",
