@@ -19,7 +19,7 @@ FROM registry.access.redhat.com/ubi8/nodejs-18-minimal:latest AS final
 COPY . .
 
 # Build the pacckages in minimal image
-RUN npm run build
+RUN yarn build
 
 # Elevate privileges to change owner of source files
 USER root
