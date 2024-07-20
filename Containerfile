@@ -4,11 +4,22 @@ FROM registry.access.redhat.com/ubi8/nodejs-18:latest AS base
 # Elevate privileges to run npm
 USER root
 
-# Copy package.json and package-lock.json
+
+WORKDIR /app
+
+# Install dependencies based on the preferred package manager
 COPY package*.json ./
 
-# Install app dependencies
-RUN npm install -g
+# run command
+RUN yarn install
+
+RUN mkdir /app/.parcel-cache && chmod -R 777 /app/.parcel-cache && chmod -R 777 /app
+
+COPY . .
+
+
+
+
 
 # Copy the dependencies into a minimal Node.js image
 FROM registry.access.redhat.com/ubi8/nodejs-18-minimal:latest AS final
@@ -37,4 +48,4 @@ ENV PORT 3000
 EXPOSE 3000
 
 # Start node process
-CMD ["npm", "start"]
+CMD ["yarn", "start"]
