@@ -1,0 +1,13 @@
+.tristate-checkbox {
+  &--wrapper {
+    display: flex;
+  }
+  &--icon {
+    border: solid 1px;
+    color: #161616;
+    border-radius: 2px;
+    width: 18px;
+    height: 18px;
+    margin-right: 0.8rem;
+  }
+}

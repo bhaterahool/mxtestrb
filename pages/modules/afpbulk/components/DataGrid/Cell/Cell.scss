@@ -1,0 +1,23 @@
+$committed: #070;
+$disabled: #999;
+$error: red;
+
+.afpbulk__col_disabled {
+  color: $disabled;
+  font-weight: bold;
+}
+.afpbulk__col_change_committed {
+  color: $committed;
+}
+
+.afpbulk__col_error {
+  color: $error;
+}
+.afpbulk_boolean {
+  padding-left: 17px;
+}
+
+.afpbulk__checkbox {
+  height: 100%;
+  margin-top: -1px;
+}

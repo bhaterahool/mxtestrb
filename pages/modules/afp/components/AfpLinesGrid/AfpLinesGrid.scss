@@ -1,0 +1,135 @@
+.afp-afplinesgrid__grid-wrapper {
+  margin-top: 1rem;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+
+  [row-id^='detail_'] {
+    resize: vertical;
+  }
+
+  [col-id='actions'] {
+    display: flex;
+    justify-content: center;
+  }
+
+  .bx--btn--icon-only {
+    margin: 0;
+  }
+
+  
+  
+  
+  
+
+  .ag-center-cols-clipper {
+    height: 100vh;
+  }
+
+  .ag-menu-separator {
+    background: none;
+  }
+
+  .ag-menu-list {
+    border: none;
+  }
+
+  .afpline__assignment {
+    text-decoration: underline;
+    color: #0000ff;
+    cursor: pointer;
+    font-weight: 400;
+
+    .bx--modal-container--lg {
+      width: 96%;
+      height: 96%;
+    }
+  }
+}
+
+.afp-afplinesgrid__row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.afp-detail-cell-renderer__wrapper {
+  height: 100%;
+  padding: 34px 34px 70px 34px;
+}
+
+.afp-detail-cell-renderer__row {
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.afp-detail-cell-renderer__row--right {
+  @extend .afp-detail-cell-renderer__row;
+  justify-content: flex-end;
+}
+
+.afp--action-cell {
+  display: flex;
+
+  .ag-react-container {
+    display: flex;
+  }
+}
+
+.afp-cell-select-input {
+  width: 100%;
+  height: 41px !important;
+}
+
+.afp-cell-select {
+  background: #fff;
+  border: 1px solid var(--cds-focus);
+
+  ul {
+    width: 100%;
+    overflow: auto;
+  }
+}
+
+.ag-cell-inline-editing {
+  overflow: visible;
+
+  .afp-cell-select {
+    display: flex;
+    height: auto;
+    max-height: 168px;
+    min-height: 126px;
+    resize: vertical;
+    background-color: #fff;
+    flex-direction: column;
+  }
+}
+
+.afp-cell-select-result-list {
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.afp-cell-select-list-item {
+  padding: 0 4px;
+}
+
+.cell-renderer {
+  position: absolute;
+  right: 0;
+  left: 0;
+  background-color: #2196f333;
+  padding: 0 17px;
+}
+
+.afp-afplinesgrid__hidden-input {
+  display: none;
+}
+
+.afp-error {
+  .bx--toast-notification__details {
+    max-height: none;
+    white-space: break-spaces;
+  }
+}

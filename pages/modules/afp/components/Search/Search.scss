@@ -1,0 +1,21 @@
+.afp-search {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  height: 100%;
+
+  .pel--search-container {
+    padding: 1rem;
+  }
+  .afp-search__results {
+    flex: 1;
+    overflow: auto;
+  }
+  .search-result-item {
+    font-size: 1.2em;
+
+    > ul {
+      margin-bottom: 1rem;
+    }
+  }
+}

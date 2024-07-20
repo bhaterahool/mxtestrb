@@ -1,0 +1,127 @@
+.afp--tab-bar {
+  flex: 1;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  padding-left: 42px;
+
+  &--open {
+    padding-left: 23rem;
+  }
+
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: block;
+    content: '';
+    height: 34px;
+    background: #5b1f69;
+    z-index: -1;
+  }
+
+  .afp--tabs {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .bx--tab-content {
+    flex-grow: 1;
+  }
+
+  .afp--tab-button-content {
+    color: #fff;
+
+    > span {
+      font-size: 1rem;
+      font-weight: 400;
+    }
+
+    .close-button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      padding: 0;
+      border: none;
+      cursor: pointer;
+      margin: 0.25rem;
+      position: absolute;
+      background: transparent;
+    }
+  }
+  .afp--tabs .bx--tabs--scrollable.bx--tabs--scrollable--container {
+    background: #5b1f69;
+    min-height: auto;
+  }
+
+  .afp--tabs .bx--tabs__overflow-indicator--right {
+    background-image: linear-gradient(to right, transparent, darken(#7e1e5a, 4%));
+  }
+
+  .bx--tabs--scrollable.bx--tabs--scrollable--container .bx--tabs--scrollable__nav-link {
+    height: 34px;
+    width: auto;
+    padding: 0 34px 0 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+
+  .afp--tabs .bx--tab--overflow-nav-button,
+  .afp--tab-item.bx--tabs__nav-item,
+  .afp--tab-item.bx--tabs--scrollable__nav-item {
+    background-color: #7e1e5a;
+    height: 34px;
+    &:hover {
+      background-color: #353535;
+    }
+    > button {
+      outline: none;
+    }
+    > svg {
+      fill: #fff;
+    }
+  }
+
+  .afp--tab-item.bx--tabs__nav-item--selected,
+  .afp--tab-item.bx--tabs--scrollable__nav-item--selected {
+    background-color: #c82274;
+    &:hover {
+      background-color: #c82274;
+    }
+  }
+
+  & > .bx--btn.bx--btn--primary {
+    min-height: 33px;
+    height: 33px;
+    background-color: #c82274;
+  }
+
+  .afp--tabs-content {
+    position: absolute;
+    top: 34px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 0;
+  }
+
+  .afp-updated--by-another-user-modal {
+    .bx--modal-header,
+    .bx--modal-content {
+      padding-right: var(--cds-spacing-05, 1rem);
+    }
+
+    .bx--modal-content p {
+      font-size: 16px;
+    }
+  }
+}

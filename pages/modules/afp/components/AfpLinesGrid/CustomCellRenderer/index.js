@@ -1,0 +1,1 @@
+export { CellAfpLineAssignment } from './CellAfpLineAssignment'

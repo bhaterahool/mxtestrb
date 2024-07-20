@@ -1,0 +1,19 @@
+.required-docs-list {
+  .bx--data-table {
+    .bx--table-header-label {
+      padding-right: var(--cds-spacing-05, 1rem);
+      padding-left: var(--cds-spacing-05, 1rem);
+    }
+
+    tr {
+      height: var(--cds-layout-04, 3rem);;
+    }
+
+    .req-document-action{
+      &__buttons {
+          display: inline-flex;
+          align-items: center;
+      }
+    }
+  }
+}

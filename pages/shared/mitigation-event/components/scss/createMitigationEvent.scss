@@ -1,0 +1,18 @@
+.pel--create-mitigation-event {
+    .ql-toolbar.ql-snow+.ql-container.ql-snow {
+        height: 250px;
+        max-height: 250px;
+    }
+
+    .mitigation-event-action{
+        &__buttons {
+            display: inline-flex;
+            align-items: center;
+        }
+    }
+
+    #mitevt {
+        width: 100%;
+        max-width: 50rem;
+    }
+}

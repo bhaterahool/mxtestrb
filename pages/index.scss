@@ -1,0 +1,59 @@
+
+$feature-flags: (
+  enable-css-custom-properties: true,
+);
+
+.custom-ant-design, .custom-ant-dropdown {
+  @import './_antd.scss'
+}
+
+@import './node_modules/@carbon/themes/scss/themes.scss';
+@import './node_modules/@carbon/themes/scss/mixins.scss';
+
+@import './node_modules/carbon-components/scss/globals/scss/functions.scss';
+@import './node_modules/carbon-components/scss/globals/scss/styles.scss';
+@import 'pel-theme.scss';
+
+:root.carbon--theme--g90 {
+  @include carbon--theme(
+   $theme:$carbon--theme--g90,
+    $emit-custom-properties: true
+  );
+}
+
+:root.carbon--theme--g10 {
+  @include carbon--theme(
+   $theme:$carbon--theme--g10,
+    $emit-custom-properties: true
+  );
+}
+
+:root.carbon--theme--g100 {
+  @include carbon--theme(
+    $theme:$carbon--theme--g100,
+    $emit-custom-properties: true
+  );
+}
+
+:root.carbon--theme--white {
+  @include carbon--theme(
+    $theme:$carbon--theme--white,
+    $emit-custom-properties: true
+  );
+}
+
+:root.carbon--theme--v9 {
+  @include carbon--theme(
+    $theme:$carbon--theme--v9,
+    $emit-custom-properties: true
+  );
+}
+
+:root.pel--theme {
+  @include carbon--theme(
+    $theme:$pel--theme,
+    $emit-custom-properties: true
+  );
+
+  font-size: 85%;
+}

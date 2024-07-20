@@ -1,0 +1,52 @@
+.pel-date-time-picker {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: stretch;
+  
+  .bx--text-input {
+    width: auto;
+    padding: 0 calc(0.5rem - 1px);
+  }
+
+  .bx--label--disabled {
+    color: var(--cds-text-02, #525252);
+  }
+}
+
+.pel-date-picker-readonly input {
+  background-color: white !important;
+}
+
+.pel-date-picker {
+  color: var(--cds-text-01, #161616);
+
+  &.bx--date-picker--single {
+    .bx--date-picker__input {
+      width: 100%;
+      padding: 0 0 0 1rem;
+      border-top: 1px solid #e6e6e6;
+      border-left: 1px solid #e6e6e6;
+      
+      &:disabled {
+        border-bottom: 1px solid #e6e6e6;
+        color: currentColor;
+        ~ .bx--date-picker__icon {
+          fill: currentColor;
+        }
+      }
+
+      &+svg{
+        right: 0.5rem;
+      }     
+    }
+  }
+
+  &, .bx--date-picker-container {
+    width: 100%;
+  }
+}
+
+.pel-date-time-picker--date-wrapper {
+  flex-grow: 1;
+}

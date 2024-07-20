@@ -1,0 +1,18 @@
+.pel-select-input {
+  &,
+  .bx--select-input,
+  .bx--select-input__wrapper {
+    width: 100%;
+  }
+  &.bx--select--disabled {
+    label{
+      color: #000000;
+    }
+    select{
+      color: #000000;
+      &.bx--select-input{
+        border-bottom: 1px solid #e6e6e6;
+      }
+    }
+  }
+}

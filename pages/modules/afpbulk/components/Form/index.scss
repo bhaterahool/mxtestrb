@@ -1,0 +1,35 @@
+
+.afpbulk__form-save {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: auto;
+  white-space: nowrap;
+}
+
+.afpbulk__form-save {
+  padding: 0 0 10px;
+}
+.afpbulk__form-save > * {
+  margin: 0 0 0 5px;
+  text-align: center;
+}
+
+.afpbulk__last-saved ~ div[role="presentation"] button {
+  text-align: center;
+  padding: 0 20px;
+}
+.afpbulk-btn--secondary {
+  background:#6495ed;
+  color: white
+}
+.afpbulk-btn--secondary:hover {
+  background:#74a5fd;
+}
+
+.afpbulk-btn--tertiary {
+  background: #949199
+}
+.afpbulk-btn--tertiary:hover {
+  background: #a4a1a9
+}

@@ -1,0 +1,36 @@
+{
+  "pelstatusdate": "2021-01-01T00:00:00.000Z",
+  "workorder": [
+    {
+      "failurereport": [
+        {
+          "failurecode": "PWIREEXP",
+          "href": "http://childkey#QVNTSUdOTUVOVC9XT1JLT1JERVIvRkFJTFVSRVJFUE9SVC8yOTQ-",
+        },
+        {
+          "failurecode": "CCNTFAUL",
+          "href": "http://childkey#QVNTSUdOTUVOVC9XT1JLT1JERVIvRkFJTFVSRVJFUE9SVC8yOTU-",
+        },
+        {
+          "failurecode": "RREPLACD",
+          "href": "http://childkey#QVNTSUdOTUVOVC9XT1JLT1JERVIvRkFJTFVSRVJFUE9SVC8yOTY-",
+        }
+      ],
+      "multiassetlocci": [
+        {
+          "pelworkcomp": false,
+          "href": "http://childkey#QVNTSUdOTUVOVC9XT1JLT1JERVIvTVVMVElBU1NFVExPQ0NJLzEwNzgyNDM2Mw--",
+          "pelnoncompreason": "NOTFOUND",
+          "pelworkoutcome": "WAITRESULTS",
+          "pelcompdate": "2021-09-15T11:12:01.985Z"
+        }
+      ],
+      "failurecode": "HMOBILEP",
+      "href": "http://childkey#QVNTSUdOTUVOVC9XT1JLT1JERVIvVUsvTE4yMTMxMDczMA--",
+    }
+  ],
+  
+  "pelassignstart": "2021-09-15T11:12:01.985Z",
+  "pelassignfinish": "2021-12-15T11:12:01.985Z",
+  "status": "SUBACCEPT"
+}

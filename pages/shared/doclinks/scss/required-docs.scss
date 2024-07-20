@@ -1,0 +1,223 @@
+.pel--doclinks {
+  margin-top: 2rem;
+}
+
+.pel-doclinks-card {
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.04), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  margin: 10px;
+}
+
+.pel--required-docs-modal {
+    .bx--modal-container.bx--modal-container--sm {
+    min-width: 920px;
+    max-width: 920px;
+    min-height: 500px;
+  }
+
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+
+  .bx--modal-footer.bx--btn-set {
+    padding-left: 22.6rem;
+  }
+
+  .drop-zone {
+    position: absolute;
+    left: 2px;
+    bottom: 2px;
+    width: 305px;
+    height: 50px;
+    border-radius: 4px;
+    border: 1px dashed #d2d2d2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    p, .text { 
+      width: 10rem;
+      display: inline-block;
+      padding: 0 0 0 1rem;
+    }
+  }
+
+  .initial-drop-zone {
+    position: block;
+    height: 420px;
+    width: 890px;
+    padding: 20px;
+    border-radius: 4px;
+    border: 1px dashed #d2d2d2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+
+    p, .text {
+      font-size: var(--cds-body-long-02-font-size,1rem);
+      font-weight: var(--cds-body-long-02-font-weight,400);
+      line-height: var(--cds-body-long-02-line-height,1.5);
+      letter-spacing: var(--cds-body-long-02-letter-spacing,0);
+      width: 10rem;
+      display: inline-block;
+      padding: 0 0 0 1rem;
+    }
+  }
+
+  &.initial-drop-zone-footer .bx--modal-footer.bx--btn-set {
+    padding-left: 0;
+  }
+}
+
+.pel--required-docs-table {
+  margin: 2rem 0;
+
+  th {
+    padding: 1rem;
+  }
+
+  tbody td {
+    padding: 0.8rem !important;
+  }
+}
+
+.pel--form-container {
+  padding: 0 2rem;
+}
+
+.pel--required-docs-form {
+  padding: 0;
+  margin-top: 1rem;
+
+  .hidden {
+    display: none;
+  }
+
+  .bx--form-item {
+    padding-right: 2rem;
+  }
+
+  .bx--select-input {
+    width: 255px;
+  }
+
+  TextArea {
+    border-top: 1px solid #e6e6e6;
+    border-left: 1px solid #e6e6e6;
+    border-right: 1px solid #e6e6e6;
+  }
+
+  .pel-date-time-picker--date-wrapper .bx--form-item {
+    padding-right: 0rem;
+  }
+}
+
+.pel--file-manager {
+  max-width: 30%;
+  position: relative;
+
+  .title {
+    padding: 0.5rem 0;
+  }
+
+  .file:hover {
+    background-color: rgb(236, 235, 235);
+  }
+
+  .file.active {
+    background-color: rgb(145, 145, 145);
+  }
+
+  .file {
+    border-top: 1px solid black;
+    display: flex;
+    color: black;
+    &.error a {
+      color: red;
+    }
+
+    a {
+      color: black;
+      display: flex;
+      align-items: center;
+      padding: 10px 5;
+      text-decoration: none;
+      flex: 1;
+    }
+  }
+
+  .file:last-of-type {
+    border-bottom: 1px solid black;
+  }
+
+  .delete-button {
+    &:hover {
+      cursor: pointer;
+    }
+
+    all: unset;
+    all: revert;
+    outline: none;
+    background: transparent;
+    border: 1px solid transparent;
+    font-size: 1
+  }
+}
+
+.pel--download-icon-sub {
+  padding: 0.5rem 0.6rem;
+  min-height: 2rem;
+
+  svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+.pel--doc-container {
+  overflow-x: unset;
+  overflow-y: scroll;
+  max-height: 15rem;
+
+  .pel--centered {
+    padding: 2% 0;
+  }
+
+  p {
+    margin: 1rem 0;
+    padding-left: 1rem;
+  }
+}
+
+.bx--tile-text__small .notes-description {
+  white-space: initial;
+  min-width: 15rem;
+  word-break: break-word;
+}
+
+.pel--doc-container-padding {
+  padding-left: 1rem;
+}
+
+.pel--download-container {
+  position: relative;
+
+  a {
+    position: absolute;
+    top: -0.4rem;
+    left: 13rem;
+  }
+}

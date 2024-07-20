@@ -1,0 +1,12 @@
+.pel--notification-panel.bx--header-panel {
+    top: 70px;
+    background-color: #ffffff;
+    color: #000000;
+    &.bx--header-panel--expanded {
+      top: 70px;
+      width: 360px;
+      background-color: #ffffff;
+      color: #000000;
+      overflow: scroll;
+    }
+}

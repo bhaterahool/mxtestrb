@@ -1,0 +1,185 @@
+.diagnosis {
+
+  position: relative;
+
+  .inner-container {
+    position: absolute;
+    left: 0;
+    right: 15px;
+    bottom: 50px;
+    top: 70px;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+}
+.diagnosis,
+.attributes,
+.guidance-notes {
+  h4 {
+    margin: 1rem 0 1rem 0;
+    border-bottom: 1px solid gray;
+    padding-bottom: 5px;
+    display: flex;
+    align-items: center;
+  }
+
+  fieldset {
+    padding-left: 5px;
+  }
+
+  .bx--radio-button-wrapper {
+    margin-top: 0.5rem;
+  }
+
+  .bx--radio-button-wrapper .bx--radio-button__label {
+    justify-content: flex-start;
+  }
+
+  .bx--radio-button-group {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .bx--toggle-input__label,
+  .bx--label {
+    font-size: 1rem;
+  }
+
+  .quill {
+    margin-top: 1rem;
+  }
+
+  .ql-toolbar.ql-snow+.ql-container.ql-snow {
+    height: 300px;
+    max-height: 300px;
+  }
+  
+  &.pel--container{
+  .bx--grid {
+    padding-left: 1rem;
+    padding-top: 0;
+  }
+}
+
+
+}
+
+.attributes {
+  margin-bottom: 1rem;
+
+  .bx--label,
+  .bx--fieldset {
+    margin-top: 1rem;
+  }
+
+  .bx--fieldset {
+    margin-bottom: 1rem;
+  }
+
+  .yorn-toggle {
+    padding: 0.75rem 0rem;
+  }
+}
+
+.diagnosis-utility {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.manual-classification {
+  display: flex;
+  width: 6rem;
+  margin-top: 9px;
+
+  .bx--label {
+    margin-right: 2px;
+  }
+
+  .bx--form-item {
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+  }
+}
+
+.classification-breadcrumb {
+  display: flex;
+  margin-top: 10px;
+  padding: 0.5rem 0;
+  display: flex;
+  align-items: center;  
+
+  svg {
+    fill: var(--cds-text-02, #161616);
+  }
+
+  button {
+    background: none !important;
+    border: none;
+    font-family: arial, sans-serif;
+    cursor: pointer;
+    padding: 0 5px 0 0;
+    padding: 5px 10px;
+    color: var(--cds-text-02, #161616);
+    font-size: 1.1rem;
+  }
+}
+
+.fade-in {
+  animation: fadeIn ease 200ms;
+  -webkit-animation: fadeIn ease 200ms;
+  -moz-animation: fadeIn ease 200ms;
+  -o-animation: fadeIn ease 200ms;
+  -ms-animation: fadeIn ease 200ms;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-o-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@-ms-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}

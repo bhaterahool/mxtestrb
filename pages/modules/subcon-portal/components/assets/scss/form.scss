@@ -1,0 +1,46 @@
+.pel--asset-form {
+
+  .pel--asset-options {
+    margin-top: 28px;
+    .bx--radio-button-wrapper {
+      margin: 1rem 0;
+  
+      .bx--radio-button__label {
+        justify-content: left;
+      }
+    }
+  }
+
+  .bx--select--disabled {
+    label{
+      color: #000000;
+    }
+    select{
+      color: #000000;
+      &.bx--select-input{
+        border-bottom: 1px solid #e6e6e6;
+      }
+    }
+  }
+  
+  label {
+    &.bx--label--disabled {
+      color: #000000;
+    }
+  }
+
+  .bx--date-picker__input:disabled {
+    border: 1px solid #e6e6e6;
+    color: #000000;
+  }
+
+  .bx--text-area:disabled {
+    border: 1px solid #e6e6e6;
+    color: #000000;
+  }
+
+  #pelcompdateinput {
+    width: auto;
+    min-width: 14rem;
+  }
+}

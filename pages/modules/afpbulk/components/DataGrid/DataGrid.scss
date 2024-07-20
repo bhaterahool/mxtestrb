@@ -1,0 +1,20 @@
+.afpbulk__gridwrapper {
+  width: 100%;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.afpbulk__grid {
+  flex-basis: 49%;
+  display: flex;
+  flex-direction: column;
+}
+
+
+.afpbulk__grid-title {
+  font-weight: bold; 
+}
+.afpbulk__grid .ag-root-wrapper {
+  margin: 5px 0 0;
+}

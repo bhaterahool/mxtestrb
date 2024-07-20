@@ -1,0 +1,51 @@
+.afp--container--wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  padding: 1rem 2rem 1rem 2rem;
+  background-color: #fff;
+
+  &--open {
+    padding-left: 25rem;
+  }
+
+  .afp--tab-content {
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .bx--tab-content {
+    flex-grow: 1;
+    overflow: auto;
+  }
+  .afp--cta-container {
+    display: flex;
+    .bx--btn {
+      flex-basis: 164px;
+    }
+  } 
+
+  .afp--grid-container {
+    flex-grow: 1;
+    margin-bottom: 24px;
+
+    .bx--modal-container--lg {
+      width: 100% !important;
+      height: 100% !important;
+      max-height: 100% !important;
+      background-color: #f4f4f4;
+    }
+  }
+  
+  .pel--main  {
+    padding: 0;
+  }
+
+  .afp-grid__action {
+    &--buttons {
+      justify-content: end;
+    }
+  }
+}

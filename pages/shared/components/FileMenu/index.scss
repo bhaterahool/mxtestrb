@@ -1,0 +1,109 @@
+
+
+.file-menu__current-filename-wrapper {
+  margin: 0 0 10px;
+  padding: 0 0 10px;
+  border-bottom: 1px solid black;
+}
+.file-menu__current-filename {
+  flex-grow: 2;
+  font-size: 1rem;
+  padding: 10px;
+  line-height: 21px;
+  font-weight: bold;
+  background: transparent;
+  color: black;
+  
+  
+}
+.file-menu__current-filename,
+.file-menu__current-filename:hover {
+  background: transparent;
+  color: black;
+  outline: none;
+}
+
+.file-menu__filemenu-actions {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin: 5px 0 0;
+  align-items: center;
+}
+
+.file-menu__filemenu {
+  padding: 10px;
+  position: static;   border-right: 1px solid black;
+  width: 100%;
+}
+
+.file-menu__delete-file-btn {
+  vertical-align: middle;
+  display: inline-block;
+}
+
+
+.file-menu__trash,
+.file-menu__trash:hover {
+  background: transparent;
+  padding: 0 5px;
+  color: black
+}
+.file-menu__trash:hover {
+  background: black;
+  color: white !important;
+}
+
+.file-menu__filemenu-li {
+  margin: 5px 0 0;
+  display: flex;
+  justify-content: space-between;
+
+}
+.file-menu__filemenu-li .file-menu__delete-file-btn {
+  margin: 0 0 0 5px;
+}
+
+.file-menu__filemenu-btn,
+.file-menu__filemenu-btn:hover {
+  background: transparent;
+  color: var(--cds-interactive-01);
+}
+
+.file-menu__filemenu-btn {
+  flex-grow: 2;
+}
+.file-menu__filemenu-btn:hover {
+  text-decoration: underline;
+}
+
+
+.file-menu__delete-all {
+  display: inline-block;
+  margin: 0 0 0 5px;
+}
+
+.file-menu__delete-file-btn [role="presentation"] > .bx--btn--primary,
+.file-menu__btn-delete-all [role="presentation"] > .bx--btn--primary {
+  display: none;
+}
+.file-menu__btn-delete-all {
+  margin: 10px 0 0;
+  border-top: 1px solid black;
+  padding: 10px 0 0;
+}
+.file-menu__btn-delete-all .file-menu__trash {
+  width: 100%;
+  max-width: 100%;
+}
+
+.file-menu__are-you-sure,
+.file-menu__filename {
+  margin: 0 10px;
+}
+.file-menu__are-you-sure {
+  text-align: center;
+}
+
+
+

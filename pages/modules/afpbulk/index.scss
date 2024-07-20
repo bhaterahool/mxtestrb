@@ -1,0 +1,63 @@
+.afpbulk--wrapper {
+  display: flex;
+  width: 100%;
+  height: calc(100% - 28px);
+}
+
+.afpbulk--tab-bar {
+  padding-left: 23rem; }
+.afpbulk-main {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  width: 100%;
+}
+.afpbulk-main-nav {
+  display: flex;
+  justify-content: space-between;
+}
+
+.afpbulk--wrapper {
+    @media (min-width: 42rem) {
+    .bx--modal-container .bx--modal-header, 
+    .bx--modal-container .bx--modal-content, 
+    .bx--modal-container .bx--modal-content__regular-content {
+        padding-right: 0 !important;
+    }
+  }
+  .bx--modal-header, 
+  .bx--modal-content {
+    padding-left: 0;
+  }
+
+    .bx--modal-container {
+    width: 500px;
+  }
+  .bx--modal-header__heading {
+    text-align: center
+  }
+  .afpbulk__are-you-sure,
+  .afpbulk__filename {
+    margin: 0 10px;
+  }
+  .afpbulk__are-you-sure {
+    text-align: center;
+  }
+}
+
+.afpbulk-footer {
+  display: flex;
+  margin-top: 16px;
+  flex-basis: 30px;
+}
+
+.afpbulk-file-input {
+  display: none;
+}
+
+.afpbulk-error {
+  .bx--toast-notification__details {
+    max-height: none;
+    white-space: break-spaces;
+  }
+}

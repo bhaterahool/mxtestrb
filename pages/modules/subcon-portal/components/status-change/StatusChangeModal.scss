@@ -1,0 +1,37 @@
+StatusChangeModal{
+    .pel--status-change-text-area {
+        border-style: solid;
+        border-width: .5px;
+    }
+}
+
+.pel--warning-container {
+    color: #fa4d55;
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+
+    svg.pel--warning-icon-class {
+        margin-right: 5px;
+    }
+}
+
+svg.pel--warning-icon-class {
+    fill: #fa4d55;
+    vertical-align: middle;
+    height: 20px;
+    width: 20px;
+}
+
+.pel--status-memo-positioning {
+    margin-top: -7rem;
+}
+
+.pel--status-change-memo {
+    .bx--text-area__wrapper {
+        > textarea {
+        border: 1px solid #e6e6e6
+        }
+    }
+}
+      

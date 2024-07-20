@@ -1,0 +1,20 @@
+.pel--create-worklog {
+    .ql-toolbar.ql-snow+.ql-container.ql-snow {
+        height: 250px;
+        max-height: 250px;
+    }
+
+    #logtype {
+        width: 100%;
+        max-width: 50rem;
+    }
+
+    .pel--create-worklog-row {
+        display: flex;
+        .pel--worklog-viewable-container{
+            align-items: flex-start;
+            align-self: center;
+            flex: 1;
+        }
+    }
+}

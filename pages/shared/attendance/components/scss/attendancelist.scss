@@ -1,0 +1,21 @@
+.pel--attendance-list-table {
+    .ql-toolbar.ql-snow+.ql-container.ql-snow {
+        height: 250px;
+        max-height: 250px;
+    }
+
+    .attendence-action{
+        &__buttons {
+            display: inline-flex;
+            align-items: center;
+        }
+    }
+}
+
+.pel-modal {
+    &.pel-attendance-modal {
+      .bx--modal-container {
+        width: 35rem;
+      }
+    }
+  }

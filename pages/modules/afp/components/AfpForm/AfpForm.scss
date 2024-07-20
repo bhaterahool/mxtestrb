@@ -1,0 +1,30 @@
+.afp--form_container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.afp--form {
+  overflow: auto;
+  max-width: 700px;
+}
+
+.afp--form_cta {
+  padding-top: 1.2rem;
+  border-top: 3px solid var(--mxpd-grey-20);
+  flex-direction: row-reverse;
+}
+
+.afp-del-btn{
+  margin-right: 10px;
+}
+
+.afp--form {
+  .bx--text-area__wrapper {
+    height: 100%;
+    > textarea {
+      max-height: 200px;
+    }
+  }
+}

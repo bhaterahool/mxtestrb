@@ -1,0 +1,35 @@
+
+.wopricing__form-save {
+  padding: 0;
+  display: flex;
+  align-items: center;
+  width: auto;
+  white-space: nowrap;
+}
+
+.wopricing__form-save {
+  padding: 0 0 10px;
+}
+.wopricing__form-save > * {
+  margin: 0 0 0 5px;
+  text-align: center;
+}
+
+.wopricing__last-saved ~ div[role="presentation"] button {
+  text-align: center;
+  padding: 0 20px;
+}
+.wopricing-btn--secondary {
+  background:#6495ed;
+  color: white
+}
+.wopricing-btn--secondary:hover {
+  background:#74a5fd;
+}
+
+.wopricing-btn--tertiary {
+  background: #949199
+}
+.wopricing-btn--tertiary:hover {
+  background: #a4a1a9
+}

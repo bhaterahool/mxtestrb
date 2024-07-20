@@ -1,0 +1,22 @@
+.pel--worklogs-table {
+  margin: 2rem 0;
+
+  th {
+    padding: 1rem;
+  }
+
+  tbody td {
+    padding: 0.8rem !important;
+  }
+
+  .lognote-action{
+    &__buttons {
+        display: inline-flex;
+        align-items: center;
+    }
+}
+}
+
+.pel--worklogs-table-toolbar .bx--table-toolbar.bx--table-toolbar--normal {
+background: transparent;
+}

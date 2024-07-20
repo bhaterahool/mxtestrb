@@ -1,0 +1,54 @@
+.notification-panel-header {
+    height: 32px;
+    background-color: #5B1F69;
+    flex-direction: row;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+
+    .bx--checkbox-label::before {
+        background-color: #ffffff
+    }
+}
+  
+.notification-list-card {
+    flex-direction: row;
+    flex: 1;
+    cursor: pointer;
+    .pel--notification-title {
+        font-weight: bold;
+        width: 200px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        padding: var(--cds-spacing-01) 0 var(--cds-spacing-01) 0;
+        margin: 6px 0 2px;
+    }
+    time {
+        font-size: 1rem;
+    }
+}
+
+.notification-modal-detail {
+    margin-top: 1em;
+}
+
+.pel--notification-container {
+    svg {
+        position: relative;
+        top: 6px;
+        cursor: pointer;
+    }
+    .label {
+        display: none;
+        position: absolute;
+        top: 0;
+        font-weight: bold;
+    }
+
+    .status:hover {
+        .label {
+            display: block;
+        }
+    }    
+}
