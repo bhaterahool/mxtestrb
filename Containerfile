@@ -14,8 +14,9 @@ RUN npm i -g nodemon
 FROM registry.access.redhat.com/ubi8/nodejs-18-minimal:latest AS final
 
 # copy the app dependencies
-COPY --from=base /opt/app-root/src/node_modules /opt/app-root/src/node_modules
-COPY . /opt/app-root/src
+# COPY --from=base /opt/app-root/src/node_modules /opt/app-root/src/node_modules
+# COPY . /opt/app-root/src
+COPY . .
 
 # Build the pacckages in minimal image
 RUN npm run build
