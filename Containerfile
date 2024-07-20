@@ -8,7 +8,7 @@ USER root
 COPY package*.json ./
 
 # Install app dependencies
-RUN yarn install
+RUN npm install -g
 
 # Copy the dependencies into a minimal Node.js image
 FROM registry.access.redhat.com/ubi8/nodejs-18-minimal:latest AS final
@@ -18,7 +18,7 @@ COPY --from=base /opt/app-root/src/node_modules /opt/app-root/src/node_modules
 COPY . /opt/app-root/src
 
 # Build the pacckages in minimal image
-RUN yarn build
+RUN npm build
 
 # Elevate privileges to change owner of source files
 USER root
