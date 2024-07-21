@@ -8,7 +8,7 @@ USER root
 COPY package*.json ./
 
 # Install app dependencies
-RUN npm ci --force
+RUN npm i --force
 
 # Copy the dependencies into a minimal Node.js image
 FROM registry.access.redhat.com/ubi8/nodejs-18-minimal:latest AS final
