@@ -9,7 +9,6 @@
     "@carbon/colors": "^10.21.0",
     "@carbon/icons-react": "^10.27.0",
     "@carbon/themes": "^10.10.3",
-    "@peluk/mxplusdata": "0.0.731",
     "@tanem/react-nprogress": "^3.0.25",
     "@types/carbon__icons-react": "^10.9.0",
     "ag-grid-community": "27.3.0",
