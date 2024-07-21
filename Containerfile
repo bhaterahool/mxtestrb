@@ -9,13 +9,13 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 
 # Install dependencies
-RUN npm install --legacy-peer-deps 
+RUN yarn install
 
 # Copy the entire application to the working directory
 COPY . .
 
 # Build the Next.js application
-RUN npm run build
+RUN yarn build
 
 # Use a lightweight Node.js image for the production environment
 #FROM node:14-alpine
