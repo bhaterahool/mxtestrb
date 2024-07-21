@@ -18,7 +18,7 @@ COPY --from=base /opt/app-root/src/node_modules /opt/app-root/src/node_modules
 COPY . /opt/app-root/src
 
 # Build the pacckages in minimal image
-RUN npm build
+RUN npm run build
 
 # Elevate privileges to change owner of source files
 USER root
