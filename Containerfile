@@ -1,39 +1,40 @@
- Use the official Node.js image as the base image
-#FROM node:14 as build
-FROM registry.access.redhat.com/ubi8/nodejs-16:latest AS base
+# Install the application dependencies in a full UBI Node docker image
+FROM registry.access.redhat.com/ubi8/nodejs-18:latest AS base
 
-# Set the working directory in the container
-WORKDIR /app
+# Elevate privileges to run npm
+USER root
 
-# Copy package.json and package-lock.json to the working directory
-COPY package.json package-lock.json ./
+# Copy package.json and package-lock.json
+COPY package*.json ./
 
-# Install dependencies
-RUN yarn install
+# Install app dependencies
+RUN npm ci
 
-# Copy the entire application to the working directory
-COPY . .
+# Copy the dependencies into a minimal Node.js image
+FROM registry.access.redhat.com/ubi8/nodejs-18-minimal:latest AS final
 
-# Build the Next.js application
-RUN yarn build
+# copy the app dependencies
+COPY --from=base /opt/app-root/src/node_modules /opt/app-root/src/node_modules
+COPY . /opt/app-root/src
 
-# Use a lightweight Node.js image for the production environment
-#FROM node:14-alpine
-FROM registry.access.redhat.com/ubi8/nodejs-16:latest AS base
+# Build the pacckages in minimal image
+RUN npm run build
 
-# Set the working directory in the container
-WORKDIR /app
+# Elevate privileges to change owner of source files
+USER root
+RUN chown -R 1001:0 /opt/app-root/src
 
-# Copy the built application from the previous stage
-COPY --from=build /app/.next ./.next
-COPY --from=build /app/public ./public
-COPY --from=build /app/package.json ./package.json
+# Restore default user privileges
+USER 1001
 
-# Install only production dependencies
-RUN npm install --production
+# Run application in 'development' mode
+ENV NODE_ENV development
 
-# Expose the port that the Next.js application will run on
+# Listen on port 3000
+ENV PORT 3000
+
+# Container exposes port 3000
 EXPOSE 3000
 
-# Start the Next.js application
+# Start node process
 CMD ["npm", "start"]
